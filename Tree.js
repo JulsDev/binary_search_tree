@@ -19,7 +19,6 @@ Tree.prototype.add = function(n) {
     this.root = node;
     this.root.x = 600;
     this.root.y = 50;
-    // addNodeStyle(node);
   } else {
     this.root.addNode(node);
   }
