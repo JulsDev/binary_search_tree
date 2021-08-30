@@ -1,3 +1,3 @@
 ## binary search tree implementation
 
-### JavaScript, HTML, p5.js
+### HTML, JavaScript, p5.js
