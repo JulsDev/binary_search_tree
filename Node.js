@@ -13,7 +13,6 @@ Node.prototype.visit = function(parent) {
   if(this.left !== null) {
     this.left.visit(this);
   }
-  // console.log(this.value);
   // figure styles
   stroke(255);
   strokeWeight(2);
@@ -52,7 +51,6 @@ Node.prototype.addNode = function(n) {
       this.left.parent = this;
       this.left.x = this.x - 80;
       this.left.y = this.y + 40;
-      // addNodeStyle(this.left);
       this.left.visit(this);
     } else {
       this.left.addNode(n);
@@ -63,7 +61,6 @@ Node.prototype.addNode = function(n) {
       this.right.parent = this;
       this.right.x = this.x + 80;
       this.right.y = this.y + 40;
-      // addNodeStyle(this.right);
       this.right.visit(this);
     } else {
       this.right.addNode(n);

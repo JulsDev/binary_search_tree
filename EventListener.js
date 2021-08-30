@@ -20,4 +20,6 @@ document.addEventListener('keyup', (event) => {
 document.addEventListener('click', () => {
   const nodeNumber = tree.findByCoordinates(mouseX, mouseY);
   tree.remove(nodeNumber);
+
+  updateCanvas();
 });
